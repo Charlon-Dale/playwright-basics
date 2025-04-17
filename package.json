@@ -1,0 +1,17 @@
+{
+  "name": "playwright-basics",
+  "version": "1.0.0",
+  "description": "Test Automation PH - Playwright Basics",
+  "main": "index.js",
+  "scripts": {
+    "example-test": "npx playwright test example.spec.ts --project chromium --ui",
+    "login-test": "npx playwright test login.spec.ts --project chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1"
+  }
+}
