@@ -4,14 +4,29 @@
   "description": "Test Automation PH - Playwright Basics",
   "main": "index.js",
   "scripts": {
-    "example-test": "npx playwright test example.spec.ts --project chromium --ui",
-    "login-test": "npx playwright test login.spec.ts --project chromium"
+    "example-test": "npx playwright test tests/example.spec.ts --project chromium --ui",
+    "login-test": "npx playwright test tests/features/login.spec.ts --project chromium",
+    "user-mngt-test": "npx playwright test tests/features/user-mngt.spec.ts --project chromium",
+    "auth-setup": "npx playwright test tests/auth.setup.ts --project setup",
+    "e2e-test": " npx playwright test e2e.spec.ts --project e2e",
+    "orange-test": "npx playwright test user-mngt.spec.ts --project chromium",
+    "register-test": "npx playwright test registration.spec.ts --project chromium",
+    "faker-test": "npx playwright test faker.spec.ts --project chromium",
+    "api-test": "npx playwright test json.api.spec.ts --project api",
+    "todo-api-test": "npx playwright test todo.api.spec.ts --project chromium",
+    "adv-locator": "npx playwright test tests/advance-locators/advance-locators.spec.ts --project chromium",
+    "mix-test": "npx playwright test tests/mix-tests/*.spec.ts --workers=2  --project chromium"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.51.1",
+    "@playwright/test": "^1.52.0",
     "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "@estruyf/github-actions-reporter": "^1.10.0",
+    "dotenv": "^16.5.0",
+    "playwright-html": "^1.2.5"
   }
 }
