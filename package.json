@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "example-test": "npx playwright test tests/example.spec.ts --project chromium --ui",
-    "login-test": "npx playwright test tests/features/login.spec.ts --project chromium",
+    "login-test": "npx playwright test tests/login/login.spec.ts --project chromium --ui",
     "user-mngt-test": "npx playwright test tests/features/user-mngt.spec.ts --project chromium",
     "auth-setup": "npx playwright test tests/auth.setup.ts --project setup",
     "e2e-test": " npx playwright test e2e.spec.ts --project e2e",
